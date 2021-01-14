@@ -1,112 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastros</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    
-</head>
-<body>
-    <header>
-        <div id=menu>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a>
-                      <a class="nav-link" href="agendamento.html">Agendamento</a>
-                      <a class="nav-link" href="#">Lembretes</a>
-                      <a class="nav-link" href="#">Agenda</a>
-                      <a class="nav-link" href="#">Clientes</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastros</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <section>
+    <div class="container-sm">
+
+      <div class="accordion">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Dados de Cliente
+              </button>
+            </h2>
+
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div id="form">
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="CPF" aria-label="CPF">
+                    </div>
+
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                    </div>
+
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Instagram" aria-label="Instagram">
+                    </div>
+                    <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="Dt Nascimento" aria-label="Nascimento">
+                    </div>
+                    <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="Tipo Sanguineo" aria-label="Tipo Sanguineo">
                     </div>
                   </div>
+
+                  </form>
+
                 </div>
-              </nav>
+              </div>
             </div>
-    </header>
-    <section>
-        <div class="container-sm">
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Dados de Endereço
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
 
+                <div class="form-group">
+                  <label for="inputAddress"></label>
+                  <input type="text" class="form-control" id="endereco" placeholder="Rua">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2"></label>
+                  <input type="text" class="form-control" id="numero" placeholder="Numero">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2"></label>
+                  <input type="text" class="form-control" id="complemento" placeholder="complemento">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2"></label>
+                  <input type="text" class="form-control" id="bairro" placeholder="bairro"><input
+                    class="btn btn-primary mt-3" type="submit" value="Cadastrar">
 
-            <div class="accordion">
+                </div>
 
-                <script src="js/bootstrap.js"></script>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Dados de Cliente
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div id="form">
+              </div>
+            </div>
 
-                                <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="CPF" aria-label="CPF"></div>
-                    
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Nome" aria-label="Nome"></div>           
-                                    
-                                    <div class="col-sm-7">
-                                      <input type="text" class="form-control" placeholder="Instagram" aria-label="Instagram">
-                                    </div>
-                                    <div class="col-sm">
-                                      <input type="text" class="form-control" placeholder="Dt Nascimento" aria-label="Nascimento">
-                                    </div>
-                                    <div class="col-sm">
-                                      <input type="text" class="form-control" placeholder="Tipo Sanguineo" aria-label="Tipo Sanguineo">
-                                    </div>
-                                  </div>
-                           
-                                  </form>
-                    
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Dados de Endereço
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                          
-                          <div class="form-group">
-                            <label for="inputAddress"></label>
-                            <input type="text" class="form-control" id="endereco" placeholder="Rua">
-                          </div>
-                          <div class="form-group">
-                            <label for="inputAddress2"></label>
-                            <input type="text" class="form-control" id="numero" placeholder="Numero">
-                          </div>
-                          <div class="form-group">
-                            <label for="inputAddress2"></label>
-                            <input type="text" class="form-control" id="complemento" placeholder="complemento">
-                          </div>
-                          <div class="form-group">
-                            <label for="inputAddress2"></label>
-                            <input type="text" class="form-control" id="bairro" placeholder="bairro">           
-  
-                        </div>
-                      </div>
-                    </div>
-                    
-                      </h2>
-                    </div>
-                  </div>          
+            </h2>
+          </div>
+        </div>
 
-    </div>
-    </section>    
-    <footer></footer>
-  
-  </body>
+      </div>
+  </section>
+
+  <footer>
+  </footer>
+
+</body>
+
 </html>
